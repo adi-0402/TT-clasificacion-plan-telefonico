@@ -1,4 +1,4 @@
-# Clasificación de Planes de Megaline
+# Clasificación de Planes Telefónicos
 ![GitHub](https://img.shields.io/badge/GitHub-Repository-lightgrey)
 ![Estado](https://img.shields.io/badge/Estado-Terminado-brightgreen)
 
