@@ -1,25 +1,47 @@
-# Clasificación de Planes Telefónicos
-![GitHub](https://img.shields.io/badge/GitHub-Repository-lightgrey)
-![Estado](https://img.shields.io/badge/Estado-Terminado-brightgreen)
+# Clasificación de Planes de Megaline
+
+---
 
 ## 📖 Descripción del Proyecto
-El objetivo de este proyecto es desarrollar un modelo de clasificación que ayude a una compañía móvil a recomendar uno de sus planes nuevos (Smart o Ultra) basado en el comportamiento del cliente. Los datos utilizados incluyen información mensual de los suscriptores sobre el uso de llamadas, mensajes y tráfico de Internet. Este proyecto se realizo con Tripleten.
+Este proyecto tiene como objetivo desarrollar un modelo predictivo que recomiende uno de los planes nuevos de Megaline (**Smart** o **Ultra**) basado en el comportamiento mensual de los clientes. Utilizando técnicas de aprendizaje automático, se analizó información sobre llamadas, mensajes y uso de Internet para optimizar la asignación de planes y aumentar la satisfacción del cliente. Este proyecto se realizo con TripleTen.
+
+---
 
 ## 💻 Funcionalidades
-- `Limpieza y Preparación de Datos`: Procesamiento y segmentación de los datos en conjuntos de entrenamiento, validación y prueba.
-- `Modelos de Clasificación`: Se implementaron tres modelos de aprendizaje automático: DecisionTreeClassifier, RandomForestClassifier y LogisticRegression.
-- `Optimización de Hiperparámetros`: Se iteró sobre diferentes hiperparámetros (n_estimators, max_depth, min_samples_split) para mejorar el desempeño de RandomForestClassifier.
+- **Limpieza y Preparación de Datos**: Procesamiento de datos y segmentación en conjuntos de entrenamiento, validación y prueba.
+- **Modelos Predictivos**: Implementación de tres modelos de clasificación:
+  - DecisionTreeClassifier
+  - RandomForestClassifier
+  - LogisticRegression
+- **Optimización de Hiperparámetros**: Ajuste de parámetros para maximizar la exactitud del modelo de bosque aleatorio (RandomForestClassifier).
+
+---
 
 ## 🛠 Tecnologías Utilizadas
 - Python
 - Pandas
 - NumPy
-- Matplotlib
-- Seaborn
 - Scikit-learn
+- Matplotlib
+
+---
+
+## 📊 Resultados
+- **Mejor Modelo**: RandomForestClassifier
+  - Hiperparámetros óptimos: `n_estimators: 200`, `max_depth: 30`, `min_samples_split: 2`.
+  - Exactitud del modelo en conjunto de prueba: **80%**.
+- El modelo superó el umbral requerido del **75%**, demostrando ser confiable para recomendaciones automatizadas.
+
+---
 
 ## ✨ Conclusiones
-- `Segmentación de Datos`: Los datos de comportamiento de los usuarios se dividieron en un 60% para el entrenamiento, 20% para la validación y 20% para la prueba.
-- `Evaluación de Modelos`: Se evaluaron tres modelos de clasificación, siendo el **RandomForestClassifier** el que presentó mejor desempeño.
-- `Optimización y Mejora`: El mejor modelo resultó con los siguientes hiperparámetros: n_estimators: 200, max_depth: 30, y min_samples_split: 2.
-- `Desempeño del Modelo`: La exactitud del modelo alcanzó aproximadamente un **80%**, superando el umbral requerido de exactitud mínima del 75%.
+- **Impacto del Proyecto**:  
+  Este modelo puede transformar cómo Megaline gestiona sus planes, optimizando la asignación de productos y personalizando la experiencia del cliente. Al automatizar la recomendación de planes, la empresa puede reducir costos operativos y aumentar la retención de clientes.
+
+- **Simplicidad y Escalabilidad**:  
+  Aunque este modelo fue diseñado con un dataset limitado, puede escalarse fácilmente incorporando más variables, como datos demográficos o históricos de consumo.
+
+- **Beneficios Clave**:  
+  La adopción de este modelo no solo mejora la toma de decisiones internas, sino que también fortalece la relación entre la empresa y sus clientes al garantizar que cada usuario reciba un plan acorde a su comportamiento.
+
+---
